@@ -9,6 +9,10 @@
 #include <string>
 #ifndef READER
 #define READER
+
+#define NUM_READERS 5
+#define NUM_WRITERS 2
+
 class reader {
    public:
     /* this class has a bunch of static (which means shared in a class)

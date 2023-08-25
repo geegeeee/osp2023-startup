@@ -23,9 +23,11 @@ class writer {
      * reader class
      **/
     void append(const std::string& line);
+    pthread_mutex_t mutex;
 
    private:
     std::ofstream out;
     std::deque<std::string> queue;
+    
 };
 #endif

@@ -10,6 +10,9 @@
 #include <string>
 #ifndef WRITER
 #define WRITER
+
+#define NUM_READERS 5
+#define NUM_WRITERS 2
 class writer {
    public:
     /**
@@ -28,5 +31,6 @@ class writer {
    private:
     static std::ofstream out;
     static std::deque<std::string> queue;
+    static std::mutex queue_mutex;
 };
 #endif

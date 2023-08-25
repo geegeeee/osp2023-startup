@@ -20,5 +20,6 @@ class reader {
    private:
     std::ifstream in;
     writer& thewriter;
+    pthread_mutex_t mutex;
 };
 #endif
